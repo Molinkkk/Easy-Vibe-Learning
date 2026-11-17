@@ -1,2 +1,2 @@
-# Easy-Vibe-Studu-Molink
+# Easy-Vibe-Learning
 Datawhale Easy-Vibe 15-Day Learning Project | AI-Native Development, Vibe Coding, AI Agents and Practical Projects.

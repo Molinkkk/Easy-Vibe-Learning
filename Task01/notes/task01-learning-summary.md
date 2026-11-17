@@ -13,7 +13,8 @@
 ## 实践记录
 
 - [ ] 基础贪吃蛇生成与运行
-      ![Uploading image.png…]()
+      <img width="1881" height="1202" alt="2026-11-17_15-14-19" src="https://github.com/user-attachments/assets/06fde5f8-6971-461c-833d-3fb904845024" />
+
 
 - [ ] 单词收集功能
 - [ ] LLM 诗歌生成

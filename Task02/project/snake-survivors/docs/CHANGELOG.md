@@ -73,3 +73,7 @@ V3：音效与静音、自然成长长局平衡、真实移动端验证、粒子
 新增 scripts/export-standalone.mjs 和 `npm run export`：将脚本/样式内联成离线 HTML。Chrome 以 file:// 在断网上下文验证开始、移动、暂停与重启，无外部请求或页面异常。新增 tests/offline.mjs。
 
 构建资源改为相对路径，静态文件已提交至远程 gh-pages，发布提交 62c682b。Task02 笔记及项目 README 已加入预期试玩链接并明确标注等待首次启用。当前协作账号有 push 权限、无 admin/maintain 权限，GitHub Pages 创建 API 返回 404；需要仓库所有者选择 gh-pages 根目录启用后再验证公开站点。
+
+### Pages 上线验证
+
+仓库所有者完成启用后，GitHub Pages 构建状态为 built，对应发布提交 62c682b。公开地址：https://molinkkk.github.io/Easy-Vibe-Learning/ 。Chrome 在线验收 HTTP 200、资源加载、雷霆蛇选择、开始、移动、暂停与继续全部通过，无页面异常。新增 tests/published.mjs 和 docs/published.png。Task02 笔记已将发布状态改为已上线。

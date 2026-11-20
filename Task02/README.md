@@ -139,6 +139,6 @@ V1 已验证基础游戏闭环；V2 已实现三角色、五武器与进化、�
 ### 在线试玩
 
 - **GitHub Pages：** [蛇境 · Snake Survivors](https://molinkkk.github.io/Easy-Vibe-Learning/)
-- **发布状态：** 游戏静态文件已推送 `gh-pages`；等待仓库所有者在 Settings → Pages 选择该分支根目录并保存，首次构建完成后链接生效。
+- **发布状态：** 已上线（2026-11-21）。GitHub Pages 构建成功，Chrome 实测 HTTP 200，角色选择、开始、移动、暂停与继续均通过。
 - **玩法：** 电脑使用 WASD / 方向键移动，自动攻击；ESC 暂停。手机使用左下方摇杆。
 - **当前版本：** V2，包含三角色、五武器、进化、精英/Boss、Combo/Fever。长局平衡、音效与真实手机验证待 V3 完善。

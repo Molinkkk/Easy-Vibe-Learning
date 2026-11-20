@@ -59,6 +59,8 @@ V3：音效及静音、性能压力测试、真实移动设备触控验收与长
 
 ## 在线试玩 / GitHub Pages
 
-[打开蛇境](https://molinkkk.github.io/Easy-Vibe-Learning/)（静态发布分支已准备，等待仓库所有者首次启用 Pages）。
+[打开蛇境](https://molinkkk.github.io/Easy-Vibe-Learning/)（已上线，2026-11-21 验证通过）。
 
 发布分支为 `gh-pages`，目录为 `/ (root)`；包含 index.html、assets 和 .nojekyll。`npm run build` 使用相对资源路径，兼容 GitHub 项目 Pages 的子路径。后续更新需构建并将 dist 中的 index.html 与 assets 发布至 gh-pages；离线导出文件不影响在线部署。
+
+线上验收可运行 `node tests/published.mjs`，检查真实 Pages 地址和游戏基本交互。

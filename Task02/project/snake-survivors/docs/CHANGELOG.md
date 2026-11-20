@@ -67,3 +67,9 @@ V1 独立提交 `091da22` 已推送目标 main。V2 在此基础上开发。
 ### 下一阶段
 
 V3：音效与静音、自然成长长局平衡、真实移动端验证、粒子与掉落性能优化。
+
+## 2026-11-21 · 分享与发布准备
+
+新增 scripts/export-standalone.mjs 和 `npm run export`：将脚本/样式内联成离线 HTML。Chrome 以 file:// 在断网上下文验证开始、移动、暂停与重启，无外部请求或页面异常。新增 tests/offline.mjs。
+
+构建资源改为相对路径，静态文件已提交至远程 gh-pages，发布提交 62c682b。Task02 笔记及项目 README 已加入预期试玩链接并明确标注等待首次启用。当前协作账号有 push 权限、无 admin/maintain 权限，GitHub Pages 创建 API 返回 404；需要仓库所有者选择 gh-pages 根目录启用后再验证公开站点。

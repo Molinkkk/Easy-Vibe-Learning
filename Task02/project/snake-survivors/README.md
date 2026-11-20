@@ -50,3 +50,15 @@ WASD / 方向键移动，自动攻击；ESC / 暂停按钮暂停继续。移动�
 17 项自动化测试通过。Chrome 验证开始、移动、暂停、死亡结算与重启、三角色切换、预置满级构筑的进化/Boss 场景，以及 390×844 布局。Boss 场景为测试预置，不代表已完成一局自然成长的 10 分钟通关；长期平衡与低端设备性能仍需 V3 实测。
 
 V3：音效及静音、性能压力测试、真实移动设备触控验收与长局数值平衡。
+
+## 离线分享（不需要服务器）
+
+运行 `npm run export`，生成 `dist/snake-survivors.html`。将这一个文件发给朋友，下载到电脑后双击，用现代浏览器打开即可游玩，无需安装 Node.js，也无需联网。建议使用桌面版 Chrome、Edge 或 Firefox；手机文件管理器可能不允许完整 HTML 脚本运行。
+
+单文件打包了 React、游戏逻辑和全部样式，没有外部资源依赖。若要通过链接直接在线玩，仍需静态托管。
+
+## 在线试玩 / GitHub Pages
+
+[打开蛇境](https://molinkkk.github.io/Easy-Vibe-Learning/)（静态发布分支已准备，等待仓库所有者首次启用 Pages）。
+
+发布分支为 `gh-pages`，目录为 `/ (root)`；包含 index.html、assets 和 .nojekyll。`npm run build` 使用相对资源路径，兼容 GitHub 项目 Pages 的子路径。后续更新需构建并将 dist 中的 index.html 与 assets 发布至 gh-pages；离线导出文件不影响在线部署。

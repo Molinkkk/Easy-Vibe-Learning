@@ -1,0 +1,17 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+let html=await readFile(resolve(root,'dist/index.html'),'utf8');
+const script=html.match(/<script\b[^>]*src="([^"]+)"[^>]*><\/script>/);
+const style=html.match(/<link\b[^>]*href="([^"]+\.css)"[^>]*>/);
+if(!script||!style)throw Error('Expected one Vite JS bundle and CSS stylesheet');
+const local=asset=>resolve(root,'dist',asset.replace(/^\//,''));
+const js=await readFile(local(script[1]),'utf8');
+const css=await readFile(local(style[1]),'utf8');
+if(/\bimport\s*[("']/.test(js))throw Error('External imports must be bundled for offline export');
+html=html.replace(script[0],()=>'<script type="module">'+js.replace(/<\/script/gi,'<\\/script')+'</script>');
+html=html.replace(style[0],()=>'<style>'+css+'</style>');
+const path=resolve(root,'dist/snake-survivors.html');
+await writeFile(path,html);
+console.log('Offline single-file export: '+path);

@@ -135,3 +135,10 @@
 [项目源码与运行说明](project/snake-survivors/README.md) · [架构方案](project/snake-survivors/docs/ARCHITECTURE.md) · [阶段记录](project/snake-survivors/docs/CHANGELOG.md)
 
 V1 已验证基础游戏闭环；V2 已实现三角色、五武器与进化、精英/Boss、Combo/Fever 和结算。长期数值、音效与性能优化属于 V3。
+
+### 在线试玩
+
+- **GitHub Pages：** [蛇境 · Snake Survivors](https://molinkkk.github.io/Easy-Vibe-Learning/)
+- **发布状态：** 游戏静态文件已推送 `gh-pages`；等待仓库所有者在 Settings → Pages 选择该分支根目录并保存，首次构建完成后链接生效。
+- **玩法：** 电脑使用 WASD / 方向键移动，自动攻击；ESC 暂停。手机使用左下方摇杆。
+- **当前版本：** V2，包含三角色、五武器、进化、精英/Boss、Combo/Fever。长局平衡、音效与真实手机验证待 V3 完善。
